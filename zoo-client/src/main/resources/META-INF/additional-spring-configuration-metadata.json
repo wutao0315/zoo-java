@@ -1,0 +1,93 @@
+{
+  "properties": [
+    {
+      "name": "zoo.access-key.secret",
+      "type": "java.lang.String",
+      "sourceType": "com.wxius.framework.foundation.internals.provider.DefaultApplicationProvider",
+      "description": "zoo client access key.",
+      "defaultValue": ""
+    },
+    {
+      "name": "zoo.autoUpdateInjectedSpringProperties",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.wxius.framework.zoo.util.ConfigUtil",
+      "description": "whether to auto update spring placeholder or not.",
+      "defaultValue": true
+    },
+    {
+      "name": "zoo.bootstrap.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.wxius.framework.zoo.spring.config.PropertySourcesConstants",
+      "description": "enable injecting namespaces in bootstrap phase.",
+      "defaultValue": false
+    },
+    {
+      "name": "zoo.bootstrap.namespaces",
+      "type": "java.lang.String",
+      "sourceType": "com.wxius.framework.zoo.spring.config.PropertySourcesConstants",
+      "description": "namespaces to be injected during bootstrap phase, multiple namespaces should be comma-separated.",
+      "defaultValue": "application"
+    },
+    {
+      "name": "zoo.bootstrap.eagerLoad.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.wxius.framework.zoo.spring.config.PropertySourcesConstants",
+      "description": "enable zoo initialization before logging system initialization.",
+      "defaultValue": false
+    },
+    {
+      "name": "zoo.override-system-properties",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.wxius.framework.zoo.util.ConfigUtil",
+      "description": "enable zoo server config override system properties.",
+      "defaultValue": true
+    },
+    {
+      "name": "zoo.cache-dir",
+      "type": "java.lang.String",
+      "sourceType": "com.wxius.framework.zoo.util.ConfigUtil",
+      "description": "local cache directory. the default value on windows is 'c:\\opt\\data', while on mac/linux is '/opt/data'.",
+      "defaultValue": "/opt/data"
+    },
+    {
+      "name": "zoo.cluster",
+      "type": "java.lang.String",
+      "sourceType": "com.wxius.framework.zoo.core.ConfigConsts",
+      "description": "cluster name.",
+      "defaultValue": "default"
+    },
+    {
+      "name": "zoo.config-service",
+      "type": "java.lang.String",
+      "sourceType": "com.wxius.framework.zoo.core.ZooClientSystemConsts",
+      "description": "zoo config service address. if it's configured zoo client will not refresh config services from remote meta service.",
+      "defaultValue": ""
+    },
+    {
+      "name": "zoo.meta",
+      "type": "java.net.URI",
+      "sourceType": "com.wxius.framework.zoo.core.ConfigConsts",
+      "description": "zoo meta server address."
+    },
+    {
+      "name": "zoo.property.names.cache.enable",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.wxius.framework.zoo.util.ConfigUtil",
+      "description": "enable property names cache.",
+      "defaultValue": false
+    },
+    {
+      "name": "zoo.property.order.enable",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.wxius.framework.zoo.util.factory.PropertiesFactory",
+      "description": "enable property order.",
+      "defaultValue": false
+    },
+    {
+      "name": "app.id",
+      "type": "java.lang.String",
+      "sourceType": "com.wxius.framework.foundation.spi.provider.ApplicationProvider",
+      "description": "zoo client app id. if it's empty zoo will only load public namespace configurations!."
+    }
+  ]
+}

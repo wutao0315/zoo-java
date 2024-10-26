@@ -1,0 +1,38 @@
+header:
+  license:
+    spdx-id: Apache-2.0
+    copyright-owner: Zoo Authors
+
+  paths-ignore:
+    - '.github/ISSUE_TEMPLATE'
+    - '.github/PULL_REQUEST_TEMPLATE'
+    - '**/.gitignore'
+    - '**/.helmignore'
+    - '.gitmodules'
+    - '.gitattributes'
+    - '.mvn'
+    - '**/*.md'
+    - '**/*.svg'
+    - '**/*.json'
+    - '**/*.conf'
+    - '**/*.ftl'
+    - '**/*.iml'
+    - '**/*.tpl'
+    - '**/*.factories'
+    - '**/*.handlers'
+    - '**/*.schemas'
+    - '**/*.nojekyll'
+    - 'mvnw'
+    - 'mvnw.cmd'
+    - '**/target/**'
+    - 'LICENSE'
+    - 'NOTICE'
+    - 'CNAME'
+    - '**/resources/META-INF/services/**'
+    - '**/resources/META-INF/spring/**'
+    - 'zoo-core/src/test/resources/META-INF/app-with-utf8bom.properties'
+    - 'zoo-core/src/test/resources/properties/server-with-utf8bom.properties'
+
+  comment: on-failure
+
+  license-location-threshold: 130

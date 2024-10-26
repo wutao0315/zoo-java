@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.wxius.framework.zoo.spring.boot.ZooAutoConfiguration
+org.springframework.context.ApplicationContextInitializer=\
+com.wxius.framework.zoo.spring.boot.ZooApplicationContextInitializer
+org.springframework.boot.env.EnvironmentPostProcessor=\
+com.wxius.framework.zoo.spring.boot.ZooApplicationContextInitializer
